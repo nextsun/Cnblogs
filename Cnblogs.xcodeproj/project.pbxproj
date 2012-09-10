@@ -7,12 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A406092515FDCAAA0046E0E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8C15FDB39900F9225D /* Foundation.framework */; };
+		A406094615FDCAE40046E0E6 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093215FDCAE40046E0E6 /* UIColor+Hex.m */; };
+		A406094715FDCAE40046E0E6 /* UIView+InnerShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093415FDCAE40046E0E6 /* UIView+InnerShadow.m */; };
+		A406094815FDCAE40046E0E6 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093615FDCAE40046E0E6 /* UIView+Positioning.m */; };
+		A406094915FDCAE40046E0E6 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093815FDCAE40046E0E6 /* UIView+Size.m */; };
+		A406094A15FDCAE40046E0E6 /* JMSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093B15FDCAE40046E0E6 /* JMSelectionView.m */; };
+		A406094B15FDCAE40046E0E6 /* JMTabContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093E15FDCAE40046E0E6 /* JMTabContainer.m */; };
+		A406094C15FDCAE40046E0E6 /* JMTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094015FDCAE40046E0E6 /* JMTabItem.m */; };
+		A406094D15FDCAE40046E0E6 /* JMTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094215FDCAE40046E0E6 /* JMTabView.m */; };
+		A406094E15FDCAE40046E0E6 /* BarBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094515FDCAE40046E0E6 /* BarBackgroundLayer.m */; };
+		A406094F15FDCB420046E0E6 /* JMTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = A406094115FDCAE40046E0E6 /* JMTabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A406095015FDCB5E0046E0E6 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093215FDCAE40046E0E6 /* UIColor+Hex.m */; };
+		A406095115FDCB5E0046E0E6 /* UIView+InnerShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093415FDCAE40046E0E6 /* UIView+InnerShadow.m */; };
+		A406095215FDCB5E0046E0E6 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093615FDCAE40046E0E6 /* UIView+Positioning.m */; };
+		A406095315FDCB5E0046E0E6 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093815FDCAE40046E0E6 /* UIView+Size.m */; };
+		A406095415FDCB5E0046E0E6 /* JMSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093B15FDCAE40046E0E6 /* JMSelectionView.m */; };
+		A406095515FDCB5E0046E0E6 /* JMTabContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093E15FDCAE40046E0E6 /* JMTabContainer.m */; };
+		A406095615FDCB5E0046E0E6 /* JMTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094015FDCAE40046E0E6 /* JMTabItem.m */; };
+		A406095715FDCB5E0046E0E6 /* JMTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094215FDCAE40046E0E6 /* JMTabView.m */; };
+		A406095815FDCB5E0046E0E6 /* BarBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094515FDCAE40046E0E6 /* BarBackgroundLayer.m */; };
+		A406095915FDCBC70046E0E6 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093115FDCAE40046E0E6 /* UIColor+Hex.h */; };
+		A406095B15FDCBC70046E0E6 /* UIView+InnerShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093315FDCAE40046E0E6 /* UIView+InnerShadow.h */; };
+		A406095D15FDCBC70046E0E6 /* UIView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093515FDCAE40046E0E6 /* UIView+Positioning.h */; };
+		A406095F15FDCBC70046E0E6 /* UIView+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093715FDCAE40046E0E6 /* UIView+Size.h */; };
+		A406096115FDCBEC0046E0E6 /* JMSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093A15FDCAE40046E0E6 /* JMSelectionView.h */; };
+		A406096215FDCBEC0046E0E6 /* JMTabConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093C15FDCAE40046E0E6 /* JMTabConstants.h */; };
+		A406096315FDCBEC0046E0E6 /* JMTabContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093D15FDCAE40046E0E6 /* JMTabContainer.h */; };
+		A406096415FDCBEC0046E0E6 /* JMTabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A406093F15FDCAE40046E0E6 /* JMTabItem.h */; };
+		A406097015FDCC8A0046E0E6 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096815FDCC8A0046E0E6 /* icon1.png */; };
+		A406097115FDCC8A0046E0E6 /* icon1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096915FDCC8A0046E0E6 /* icon1@2x.png */; };
+		A406097215FDCC8A0046E0E6 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096A15FDCC8A0046E0E6 /* icon2.png */; };
+		A406097315FDCC8A0046E0E6 /* icon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096B15FDCC8A0046E0E6 /* icon2@2x.png */; };
+		A406097415FDCC8A0046E0E6 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096C15FDCC8A0046E0E6 /* icon3.png */; };
+		A406097515FDCC8A0046E0E6 /* icon3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096D15FDCC8A0046E0E6 /* icon3@2x.png */; };
+		A406097615FDCC8A0046E0E6 /* noise-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096E15FDCC8A0046E0E6 /* noise-tile.png */; };
+		A406097715FDCC8A0046E0E6 /* noise-tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A406096F15FDCC8A0046E0E6 /* noise-tile@2x.png */; };
+		A406098615FDCD0D0046E0E6 /* CustomBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406097B15FDCD0D0046E0E6 /* CustomBackgroundLayer.m */; };
+		A406098715FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406097D15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m */; };
+		A406098815FDCD0D0046E0E6 /* CustomSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406097F15FDCD0D0046E0E6 /* CustomSelectionView.m */; };
+		A406098915FDCD0D0046E0E6 /* CustomTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098115FDCD0D0046E0E6 /* CustomTabItem.m */; };
+		A406099215FDCDFD0046E0E6 /* TabDemoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */; };
+		A406099315FDCDFD0046E0E6 /* TabDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */; };
+		A406099715FDCE3A0046E0E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A406099515FDCE3A0046E0E6 /* AppDelegate.m */; };
+		A406099915FDCF0E0046E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406099815FDCF0E0046E0E6 /* QuartzCore.framework */; };
+		A406099E15FDCF7E0046E0E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8A15FDB39900F9225D /* UIKit.framework */; };
+		A406099F15FDCF940046E0E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8E15FDB39900F9225D /* CoreGraphics.framework */; };
+		A40609A115FDD1020046E0E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A406099515FDCE3A0046E0E6 /* AppDelegate.m */; };
+		A40609A215FDD1020046E0E6 /* TabDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */; };
+		A40609A315FDD17B0046E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406099815FDCF0E0046E0E6 /* QuartzCore.framework */; };
 		A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8A15FDB39900F9225D /* UIKit.framework */; };
 		A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8C15FDB39900F9225D /* Foundation.framework */; };
 		A4808B8F15FDB39900F9225D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8E15FDB39900F9225D /* CoreGraphics.framework */; };
 		A4808B9515FDB39900F9225D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4808B9315FDB39900F9225D /* InfoPlist.strings */; };
 		A4808B9715FDB39900F9225D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4808B9615FDB39900F9225D /* main.m */; };
-		A4808B9B15FDB39900F9225D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4808B9A15FDB39900F9225D /* AppDelegate.m */; };
 		A4808B9E15FDB39900F9225D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4808B9D15FDB39900F9225D /* FirstViewController.m */; };
 		A4808BA015FDB39900F9225D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A4808B9F15FDB39900F9225D /* first.png */; };
 		A4808BA215FDB39900F9225D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4808BA115FDB39900F9225D /* first@2x.png */; };
@@ -23,7 +71,59 @@
 		A4808BAF15FDB39900F9225D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4808BAD15FDB39900F9225D /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A406096515FDCC0E0046E0E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4808B7D15FDB39800F9225D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A406092315FDCAAA0046E0E6;
+			remoteInfo = JMTabView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A406092415FDCAAA0046E0E6 /* libJMTabView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJMTabView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A406092815FDCAAA0046E0E6 /* JMTabView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JMTabView-Prefix.pch"; sourceTree = "<group>"; };
+		A406093115FDCAE40046E0E6 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		A406093215FDCAE40046E0E6 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		A406093315FDCAE40046E0E6 /* UIView+InnerShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+InnerShadow.h"; sourceTree = "<group>"; };
+		A406093415FDCAE40046E0E6 /* UIView+InnerShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+InnerShadow.m"; sourceTree = "<group>"; };
+		A406093515FDCAE40046E0E6 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		A406093615FDCAE40046E0E6 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		A406093715FDCAE40046E0E6 /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		A406093815FDCAE40046E0E6 /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		A406093A15FDCAE40046E0E6 /* JMSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSelectionView.h; sourceTree = "<group>"; };
+		A406093B15FDCAE40046E0E6 /* JMSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSelectionView.m; sourceTree = "<group>"; };
+		A406093C15FDCAE40046E0E6 /* JMTabConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabConstants.h; sourceTree = "<group>"; };
+		A406093D15FDCAE40046E0E6 /* JMTabContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabContainer.h; sourceTree = "<group>"; };
+		A406093E15FDCAE40046E0E6 /* JMTabContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabContainer.m; sourceTree = "<group>"; };
+		A406093F15FDCAE40046E0E6 /* JMTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabItem.h; sourceTree = "<group>"; };
+		A406094015FDCAE40046E0E6 /* JMTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabItem.m; sourceTree = "<group>"; };
+		A406094115FDCAE40046E0E6 /* JMTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabView.h; sourceTree = "<group>"; };
+		A406094215FDCAE40046E0E6 /* JMTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabView.m; sourceTree = "<group>"; };
+		A406094415FDCAE40046E0E6 /* BarBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarBackgroundLayer.h; sourceTree = "<group>"; };
+		A406094515FDCAE40046E0E6 /* BarBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarBackgroundLayer.m; sourceTree = "<group>"; };
+		A406096815FDCC8A0046E0E6 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		A406096915FDCC8A0046E0E6 /* icon1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1@2x.png"; sourceTree = "<group>"; };
+		A406096A15FDCC8A0046E0E6 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		A406096B15FDCC8A0046E0E6 /* icon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon2@2x.png"; sourceTree = "<group>"; };
+		A406096C15FDCC8A0046E0E6 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		A406096D15FDCC8A0046E0E6 /* icon3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon3@2x.png"; sourceTree = "<group>"; };
+		A406096E15FDCC8A0046E0E6 /* noise-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noise-tile.png"; sourceTree = "<group>"; };
+		A406096F15FDCC8A0046E0E6 /* noise-tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noise-tile@2x.png"; sourceTree = "<group>"; };
+		A406097A15FDCD0D0046E0E6 /* CustomBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBackgroundLayer.h; sourceTree = "<group>"; };
+		A406097B15FDCD0D0046E0E6 /* CustomBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBackgroundLayer.m; sourceTree = "<group>"; };
+		A406097C15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNoiseBackgroundView.h; sourceTree = "<group>"; };
+		A406097D15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNoiseBackgroundView.m; sourceTree = "<group>"; };
+		A406097E15FDCD0D0046E0E6 /* CustomSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSelectionView.h; sourceTree = "<group>"; };
+		A406097F15FDCD0D0046E0E6 /* CustomSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSelectionView.m; sourceTree = "<group>"; };
+		A406098015FDCD0D0046E0E6 /* CustomTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabItem.h; sourceTree = "<group>"; };
+		A406098115FDCD0D0046E0E6 /* CustomTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabItem.m; sourceTree = "<group>"; };
+		A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabDemoViewController.h; path = Resources/TabDemoViewController.h; sourceTree = "<group>"; };
+		A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabDemoViewController.m; path = Resources/TabDemoViewController.m; sourceTree = "<group>"; };
+		A406099415FDCE3A0046E0E6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A406099515FDCE3A0046E0E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A406099815FDCF0E0046E0E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A4808B8615FDB39900F9225D /* Cnblogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cnblogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4808B8A15FDB39900F9225D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4808B8C15FDB39900F9225D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,8 +132,6 @@
 		A4808B9415FDB39900F9225D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4808B9615FDB39900F9225D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4808B9815FDB39900F9225D /* Cnblogs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cnblogs-Prefix.pch"; sourceTree = "<group>"; };
-		A4808B9915FDB39900F9225D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A4808B9A15FDB39900F9225D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A4808B9C15FDB39900F9225D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		A4808B9D15FDB39900F9225D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		A4808B9F15FDB39900F9225D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -47,10 +145,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A406092115FDCAAA0046E0E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A406099F15FDCF940046E0E6 /* CoreGraphics.framework in Frameworks */,
+				A406099E15FDCF7E0046E0E6 /* UIKit.framework in Frameworks */,
+				A406099915FDCF0E0046E0E6 /* QuartzCore.framework in Frameworks */,
+				A406092515FDCAAA0046E0E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4808B8315FDB39900F9225D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40609A315FDD17B0046E0E6 /* QuartzCore.framework in Frameworks */,
 				A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */,
 				A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */,
 				A4808B8F15FDB39900F9225D /* CoreGraphics.framework in Frameworks */,
@@ -60,10 +170,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A406092615FDCAAA0046E0E6 /* JMTabView */ = {
+			isa = PBXGroup;
+			children = (
+				A406092F15FDCAE40046E0E6 /* Classes */,
+				A406092715FDCAAA0046E0E6 /* Supporting Files */,
+			);
+			path = JMTabView;
+			sourceTree = "<group>";
+		};
+		A406092715FDCAAA0046E0E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A406092815FDCAAA0046E0E6 /* JMTabView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A406092F15FDCAE40046E0E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A406093015FDCAE40046E0E6 /* Categories */,
+				A406093915FDCAE40046E0E6 /* Subviews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A406093015FDCAE40046E0E6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A406093115FDCAE40046E0E6 /* UIColor+Hex.h */,
+				A406093215FDCAE40046E0E6 /* UIColor+Hex.m */,
+				A406093315FDCAE40046E0E6 /* UIView+InnerShadow.h */,
+				A406093415FDCAE40046E0E6 /* UIView+InnerShadow.m */,
+				A406093515FDCAE40046E0E6 /* UIView+Positioning.h */,
+				A406093615FDCAE40046E0E6 /* UIView+Positioning.m */,
+				A406093715FDCAE40046E0E6 /* UIView+Size.h */,
+				A406093815FDCAE40046E0E6 /* UIView+Size.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A406093915FDCAE40046E0E6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A406093A15FDCAE40046E0E6 /* JMSelectionView.h */,
+				A406093B15FDCAE40046E0E6 /* JMSelectionView.m */,
+				A406093C15FDCAE40046E0E6 /* JMTabConstants.h */,
+				A406093D15FDCAE40046E0E6 /* JMTabContainer.h */,
+				A406093E15FDCAE40046E0E6 /* JMTabContainer.m */,
+				A406093F15FDCAE40046E0E6 /* JMTabItem.h */,
+				A406094015FDCAE40046E0E6 /* JMTabItem.m */,
+				A406094115FDCAE40046E0E6 /* JMTabView.h */,
+				A406094215FDCAE40046E0E6 /* JMTabView.m */,
+				A406094315FDCAE40046E0E6 /* Layers */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A406094315FDCAE40046E0E6 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				A406094415FDCAE40046E0E6 /* BarBackgroundLayer.h */,
+				A406094515FDCAE40046E0E6 /* BarBackgroundLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		A406096715FDCC8A0046E0E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A406096815FDCC8A0046E0E6 /* icon1.png */,
+				A406096915FDCC8A0046E0E6 /* icon1@2x.png */,
+				A406096A15FDCC8A0046E0E6 /* icon2.png */,
+				A406096B15FDCC8A0046E0E6 /* icon2@2x.png */,
+				A406096C15FDCC8A0046E0E6 /* icon3.png */,
+				A406096D15FDCC8A0046E0E6 /* icon3@2x.png */,
+				A406096E15FDCC8A0046E0E6 /* noise-tile.png */,
+				A406096F15FDCC8A0046E0E6 /* noise-tile@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A406097815FDCD0D0046E0E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A406097915FDCD0D0046E0E6 /* Custom */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A406097915FDCD0D0046E0E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A406097A15FDCD0D0046E0E6 /* CustomBackgroundLayer.h */,
+				A406097B15FDCD0D0046E0E6 /* CustomBackgroundLayer.m */,
+				A406097C15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.h */,
+				A406097D15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m */,
+				A406097E15FDCD0D0046E0E6 /* CustomSelectionView.h */,
+				A406097F15FDCD0D0046E0E6 /* CustomSelectionView.m */,
+				A406098015FDCD0D0046E0E6 /* CustomTabItem.h */,
+				A406098115FDCD0D0046E0E6 /* CustomTabItem.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		A4808B7B15FDB39800F9225D = {
 			isa = PBXGroup;
 			children = (
 				A4808B9015FDB39900F9225D /* Cnblogs */,
+				A406092615FDCAAA0046E0E6 /* JMTabView */,
 				A4808B8915FDB39900F9225D /* Frameworks */,
 				A4808B8715FDB39900F9225D /* Products */,
 			);
@@ -73,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				A4808B8615FDB39900F9225D /* Cnblogs.app */,
+				A406092415FDCAAA0046E0E6 /* libJMTabView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +299,7 @@
 			children = (
 				A4808B8A15FDB39900F9225D /* UIKit.framework */,
 				A4808B8C15FDB39900F9225D /* Foundation.framework */,
+				A406099815FDCF0E0046E0E6 /* QuartzCore.framework */,
 				A4808B8E15FDB39900F9225D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
@@ -90,8 +308,11 @@
 		A4808B9015FDB39900F9225D /* Cnblogs */ = {
 			isa = PBXGroup;
 			children = (
-				A4808B9915FDB39900F9225D /* AppDelegate.h */,
-				A4808B9A15FDB39900F9225D /* AppDelegate.m */,
+				A406097815FDCD0D0046E0E6 /* Classes */,
+				A406099415FDCE3A0046E0E6 /* AppDelegate.h */,
+				A406099515FDCE3A0046E0E6 /* AppDelegate.m */,
+				A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */,
+				A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */,
 				A4808B9C15FDB39900F9225D /* FirstViewController.h */,
 				A4808B9D15FDB39900F9225D /* FirstViewController.m */,
 				A4808B9F15FDB39900F9225D /* first.png */,
@@ -102,6 +323,7 @@
 				A4808BA815FDB39900F9225D /* second@2x.png */,
 				A4808BAA15FDB39900F9225D /* FirstViewController.xib */,
 				A4808BAD15FDB39900F9225D /* SecondViewController.xib */,
+				A406096715FDCC8A0046E0E6 /* Resources */,
 				A4808B9115FDB39900F9225D /* Supporting Files */,
 			);
 			path = Cnblogs;
@@ -120,7 +342,44 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A406092215FDCAAA0046E0E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A406094F15FDCB420046E0E6 /* JMTabView.h in Headers */,
+				A406096115FDCBEC0046E0E6 /* JMSelectionView.h in Headers */,
+				A406096215FDCBEC0046E0E6 /* JMTabConstants.h in Headers */,
+				A406096315FDCBEC0046E0E6 /* JMTabContainer.h in Headers */,
+				A406096415FDCBEC0046E0E6 /* JMTabItem.h in Headers */,
+				A406095915FDCBC70046E0E6 /* UIColor+Hex.h in Headers */,
+				A406095B15FDCBC70046E0E6 /* UIView+InnerShadow.h in Headers */,
+				A406095D15FDCBC70046E0E6 /* UIView+Positioning.h in Headers */,
+				A406095F15FDCBC70046E0E6 /* UIView+Size.h in Headers */,
+				A406099215FDCDFD0046E0E6 /* TabDemoViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		A406092315FDCAAA0046E0E6 /* JMTabView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A406092C15FDCAAA0046E0E6 /* Build configuration list for PBXNativeTarget "JMTabView" */;
+			buildPhases = (
+				A406092015FDCAAA0046E0E6 /* Sources */,
+				A406092115FDCAAA0046E0E6 /* Frameworks */,
+				A406092215FDCAAA0046E0E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMTabView;
+			productName = JMTabView;
+			productReference = A406092415FDCAAA0046E0E6 /* libJMTabView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A4808B8515FDB39900F9225D /* Cnblogs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4808BB215FDB39900F9225D /* Build configuration list for PBXNativeTarget "Cnblogs" */;
@@ -132,6 +391,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A406096615FDCC0E0046E0E6 /* PBXTargetDependency */,
 			);
 			name = Cnblogs;
 			productName = Cnblogs;
@@ -159,6 +419,7 @@
 			projectRoot = "";
 			targets = (
 				A4808B8515FDB39900F9225D /* Cnblogs */,
+				A406092315FDCAAA0046E0E6 /* JMTabView */,
 			);
 		};
 /* End PBXProject section */
@@ -175,24 +436,72 @@
 				A4808BA915FDB39900F9225D /* second@2x.png in Resources */,
 				A4808BAC15FDB39900F9225D /* FirstViewController.xib in Resources */,
 				A4808BAF15FDB39900F9225D /* SecondViewController.xib in Resources */,
+				A406097015FDCC8A0046E0E6 /* icon1.png in Resources */,
+				A406097115FDCC8A0046E0E6 /* icon1@2x.png in Resources */,
+				A406097215FDCC8A0046E0E6 /* icon2.png in Resources */,
+				A406097315FDCC8A0046E0E6 /* icon2@2x.png in Resources */,
+				A406097415FDCC8A0046E0E6 /* icon3.png in Resources */,
+				A406097515FDCC8A0046E0E6 /* icon3@2x.png in Resources */,
+				A406097615FDCC8A0046E0E6 /* noise-tile.png in Resources */,
+				A406097715FDCC8A0046E0E6 /* noise-tile@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A406092015FDCAAA0046E0E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A406095015FDCB5E0046E0E6 /* UIColor+Hex.m in Sources */,
+				A406095115FDCB5E0046E0E6 /* UIView+InnerShadow.m in Sources */,
+				A406095215FDCB5E0046E0E6 /* UIView+Positioning.m in Sources */,
+				A406095315FDCB5E0046E0E6 /* UIView+Size.m in Sources */,
+				A406095415FDCB5E0046E0E6 /* JMSelectionView.m in Sources */,
+				A406095515FDCB5E0046E0E6 /* JMTabContainer.m in Sources */,
+				A406095615FDCB5E0046E0E6 /* JMTabItem.m in Sources */,
+				A406095715FDCB5E0046E0E6 /* JMTabView.m in Sources */,
+				A406095815FDCB5E0046E0E6 /* BarBackgroundLayer.m in Sources */,
+				A406099315FDCDFD0046E0E6 /* TabDemoViewController.m in Sources */,
+				A406099715FDCE3A0046E0E6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4808B8215FDB39900F9225D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40609A115FDD1020046E0E6 /* AppDelegate.m in Sources */,
+				A40609A215FDD1020046E0E6 /* TabDemoViewController.m in Sources */,
 				A4808B9715FDB39900F9225D /* main.m in Sources */,
-				A4808B9B15FDB39900F9225D /* AppDelegate.m in Sources */,
 				A4808B9E15FDB39900F9225D /* FirstViewController.m in Sources */,
 				A4808BA515FDB39900F9225D /* SecondViewController.m in Sources */,
+				A406094615FDCAE40046E0E6 /* UIColor+Hex.m in Sources */,
+				A406094715FDCAE40046E0E6 /* UIView+InnerShadow.m in Sources */,
+				A406094815FDCAE40046E0E6 /* UIView+Positioning.m in Sources */,
+				A406094915FDCAE40046E0E6 /* UIView+Size.m in Sources */,
+				A406094A15FDCAE40046E0E6 /* JMSelectionView.m in Sources */,
+				A406094B15FDCAE40046E0E6 /* JMTabContainer.m in Sources */,
+				A406094C15FDCAE40046E0E6 /* JMTabItem.m in Sources */,
+				A406094D15FDCAE40046E0E6 /* JMTabView.m in Sources */,
+				A406094E15FDCAE40046E0E6 /* BarBackgroundLayer.m in Sources */,
+				A406098615FDCD0D0046E0E6 /* CustomBackgroundLayer.m in Sources */,
+				A406098715FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m in Sources */,
+				A406098815FDCD0D0046E0E6 /* CustomSelectionView.m in Sources */,
+				A406098915FDCD0D0046E0E6 /* CustomTabItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A406096615FDCC0E0046E0E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A406092315FDCAAA0046E0E6 /* JMTabView */;
+			targetProxy = A406096515FDCC0E0046E0E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A4808B9315FDB39900F9225D /* InfoPlist.strings */ = {
@@ -222,6 +531,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A406092D15FDCAAA0046E0E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JMTabView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMTabView/JMTabView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A406092E15FDCAAA0046E0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JMTabView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMTabView/JMTabView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A4808BB015FDB39900F9225D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +625,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A406092C15FDCAAA0046E0E6 /* Build configuration list for PBXNativeTarget "JMTabView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A406092D15FDCAAA0046E0E6 /* Debug */,
+				A406092E15FDCAAA0046E0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A4808B8015FDB39800F9225D /* Build configuration list for PBXProject "Cnblogs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -308,6 +649,7 @@
 				A4808BB415FDB39900F9225D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

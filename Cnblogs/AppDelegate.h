@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UITabBarController *tabBarController;
+//@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (nonatomic, retain) UINavigationController *navigationController;
 
 @end

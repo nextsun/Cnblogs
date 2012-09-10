@@ -5,36 +5,48 @@
 //  Created by Lei Sun on 9/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-
+#import <QuartzCore/QuartzCore.h>
 #import "AppDelegate.h"
 
 #import "FirstViewController.h"
 
 #import "SecondViewController.h"
 
+#import "TabDemoViewController.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
+//@synthesize tabBarController = _tabBarController;
+@synthesize navigationController=_navigationController;
 
 - (void)dealloc
 {
     [_window release];
-    [_tabBarController release];
+    [_navigationController release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
-    self.window.rootViewController = self.tabBarController;
+//    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+//    // Override point for customization after application launch.
+//    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+//    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+//    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+//    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+//    self.window.rootViewController = self.tabBarController;
+//    [self.window makeKeyAndVisible];
+//    
+    TabDemoViewController * demoViewController = [[[TabDemoViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:demoViewController] autorelease];
+    [self.navigationController setNavigationBarHidden:YES];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     
+
     
     return YES;
 }
