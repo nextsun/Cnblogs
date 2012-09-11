@@ -12,7 +12,7 @@
 
 #import "SecondViewController.h"
 
-#import "TabDemoViewController.h"
+#import "RootTabViewController.h"
 
 @implementation AppDelegate
 
@@ -38,8 +38,8 @@
 //    self.window.rootViewController = self.tabBarController;
 //    [self.window makeKeyAndVisible];
 //    
-    TabDemoViewController * demoViewController = [[[TabDemoViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:demoViewController] autorelease];
+    RootTabViewController * rootViewController = [[[RootTabViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
     [self.navigationController setNavigationBarHidden:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

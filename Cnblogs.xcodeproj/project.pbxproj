@@ -47,15 +47,21 @@
 		A406098715FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406097D15FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m */; };
 		A406098815FDCD0D0046E0E6 /* CustomSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406097F15FDCD0D0046E0E6 /* CustomSelectionView.m */; };
 		A406098915FDCD0D0046E0E6 /* CustomTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098115FDCD0D0046E0E6 /* CustomTabItem.m */; };
-		A406099215FDCDFD0046E0E6 /* TabDemoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */; };
-		A406099315FDCDFD0046E0E6 /* TabDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */; };
+		A406099215FDCDFD0046E0E6 /* RootTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A406098E15FDCDFD0046E0E6 /* RootTabViewController.h */; };
+		A406099315FDCDFD0046E0E6 /* RootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* RootTabViewController.m */; };
 		A406099715FDCE3A0046E0E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A406099515FDCE3A0046E0E6 /* AppDelegate.m */; };
 		A406099915FDCF0E0046E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406099815FDCF0E0046E0E6 /* QuartzCore.framework */; };
 		A406099E15FDCF7E0046E0E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8A15FDB39900F9225D /* UIKit.framework */; };
 		A406099F15FDCF940046E0E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8E15FDB39900F9225D /* CoreGraphics.framework */; };
 		A40609A115FDD1020046E0E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A406099515FDCE3A0046E0E6 /* AppDelegate.m */; };
-		A40609A215FDD1020046E0E6 /* TabDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */; };
+		A40609A215FDD1020046E0E6 /* RootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A406098F15FDCDFD0046E0E6 /* RootTabViewController.m */; };
 		A40609A315FDD17B0046E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406099815FDCF0E0046E0E6 /* QuartzCore.framework */; };
+		A42C918C15FF20F000B6554F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A42C918815FF20F000B6554F /* HTMLNode.m */; };
+		A42C918D15FF20F000B6554F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A42C918A15FF20F000B6554F /* HTMLParser.m */; };
+		A42C918E15FF20F000B6554F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A42C918B15FF20F000B6554F /* README.md */; };
+		A42C919115FF3ED000B6554F /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42C919015FF3ED000B6554F /* NewsDetailController.m */; };
+		A451ECF915FF105700E206DB /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A451ECF815FF105700E206DB /* NewsViewController.m */; };
+		A451ECFD15FF1C8E00E206DB /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */; };
 		A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8A15FDB39900F9225D /* UIKit.framework */; };
 		A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8C15FDB39900F9225D /* Foundation.framework */; };
 		A4808B8F15FDB39900F9225D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8E15FDB39900F9225D /* CoreGraphics.framework */; };
@@ -119,11 +125,21 @@
 		A406097F15FDCD0D0046E0E6 /* CustomSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSelectionView.m; sourceTree = "<group>"; };
 		A406098015FDCD0D0046E0E6 /* CustomTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabItem.h; sourceTree = "<group>"; };
 		A406098115FDCD0D0046E0E6 /* CustomTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabItem.m; sourceTree = "<group>"; };
-		A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabDemoViewController.h; path = Resources/TabDemoViewController.h; sourceTree = "<group>"; };
-		A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabDemoViewController.m; path = Resources/TabDemoViewController.m; sourceTree = "<group>"; };
+		A406098E15FDCDFD0046E0E6 /* RootTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootTabViewController.h; path = Resources/RootTabViewController.h; sourceTree = "<group>"; };
+		A406098F15FDCDFD0046E0E6 /* RootTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootTabViewController.m; path = Resources/RootTabViewController.m; sourceTree = "<group>"; };
 		A406099415FDCE3A0046E0E6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A406099515FDCE3A0046E0E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A406099815FDCF0E0046E0E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A42C918715FF20F000B6554F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		A42C918815FF20F000B6554F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		A42C918915FF20F000B6554F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		A42C918A15FF20F000B6554F /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		A42C918B15FF20F000B6554F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A42C918F15FF3ED000B6554F /* NewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailController.h; sourceTree = "<group>"; };
+		A42C919015FF3ED000B6554F /* NewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
+		A451ECF715FF105700E206DB /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		A451ECF815FF105700E206DB /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 		A4808B8615FDB39900F9225D /* Cnblogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cnblogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4808B8A15FDB39900F9225D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4808B8C15FDB39900F9225D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A451ECFD15FF1C8E00E206DB /* libxml2.2.7.3.dylib in Frameworks */,
 				A40609A315FDD17B0046E0E6 /* QuartzCore.framework in Frameworks */,
 				A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */,
 				A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */,
@@ -256,6 +273,10 @@
 			isa = PBXGroup;
 			children = (
 				A406097915FDCD0D0046E0E6 /* Custom */,
+				A451ECF715FF105700E206DB /* NewsViewController.h */,
+				A451ECF815FF105700E206DB /* NewsViewController.m */,
+				A42C918F15FF3ED000B6554F /* NewsDetailController.h */,
+				A42C919015FF3ED000B6554F /* NewsDetailController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -273,6 +294,26 @@
 				A406098115FDCD0D0046E0E6 /* CustomTabItem.m */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		A42C918515FF20F000B6554F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A42C918615FF20F000B6554F /* HMTLParser */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A42C918615FF20F000B6554F /* HMTLParser */ = {
+			isa = PBXGroup;
+			children = (
+				A42C918715FF20F000B6554F /* HTMLNode.h */,
+				A42C918815FF20F000B6554F /* HTMLNode.m */,
+				A42C918915FF20F000B6554F /* HTMLParser.h */,
+				A42C918A15FF20F000B6554F /* HTMLParser.m */,
+				A42C918B15FF20F000B6554F /* README.md */,
+			);
+			path = HMTLParser;
 			sourceTree = "<group>";
 		};
 		A4808B7B15FDB39800F9225D = {
@@ -297,6 +338,7 @@
 		A4808B8915FDB39900F9225D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */,
 				A4808B8A15FDB39900F9225D /* UIKit.framework */,
 				A4808B8C15FDB39900F9225D /* Foundation.framework */,
 				A406099815FDCF0E0046E0E6 /* QuartzCore.framework */,
@@ -308,11 +350,12 @@
 		A4808B9015FDB39900F9225D /* Cnblogs */ = {
 			isa = PBXGroup;
 			children = (
+				A42C918515FF20F000B6554F /* Lib */,
 				A406097815FDCD0D0046E0E6 /* Classes */,
 				A406099415FDCE3A0046E0E6 /* AppDelegate.h */,
 				A406099515FDCE3A0046E0E6 /* AppDelegate.m */,
-				A406098E15FDCDFD0046E0E6 /* TabDemoViewController.h */,
-				A406098F15FDCDFD0046E0E6 /* TabDemoViewController.m */,
+				A406098E15FDCDFD0046E0E6 /* RootTabViewController.h */,
+				A406098F15FDCDFD0046E0E6 /* RootTabViewController.m */,
 				A4808B9C15FDB39900F9225D /* FirstViewController.h */,
 				A4808B9D15FDB39900F9225D /* FirstViewController.m */,
 				A4808B9F15FDB39900F9225D /* first.png */,
@@ -356,7 +399,7 @@
 				A406095B15FDCBC70046E0E6 /* UIView+InnerShadow.h in Headers */,
 				A406095D15FDCBC70046E0E6 /* UIView+Positioning.h in Headers */,
 				A406095F15FDCBC70046E0E6 /* UIView+Size.h in Headers */,
-				A406099215FDCDFD0046E0E6 /* TabDemoViewController.h in Headers */,
+				A406099215FDCDFD0046E0E6 /* RootTabViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +487,7 @@
 				A406097515FDCC8A0046E0E6 /* icon3@2x.png in Resources */,
 				A406097615FDCC8A0046E0E6 /* noise-tile.png in Resources */,
 				A406097715FDCC8A0046E0E6 /* noise-tile@2x.png in Resources */,
+				A42C918E15FF20F000B6554F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +507,7 @@
 				A406095615FDCB5E0046E0E6 /* JMTabItem.m in Sources */,
 				A406095715FDCB5E0046E0E6 /* JMTabView.m in Sources */,
 				A406095815FDCB5E0046E0E6 /* BarBackgroundLayer.m in Sources */,
-				A406099315FDCDFD0046E0E6 /* TabDemoViewController.m in Sources */,
+				A406099315FDCDFD0046E0E6 /* RootTabViewController.m in Sources */,
 				A406099715FDCE3A0046E0E6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A40609A115FDD1020046E0E6 /* AppDelegate.m in Sources */,
-				A40609A215FDD1020046E0E6 /* TabDemoViewController.m in Sources */,
+				A40609A215FDD1020046E0E6 /* RootTabViewController.m in Sources */,
 				A4808B9715FDB39900F9225D /* main.m in Sources */,
 				A4808B9E15FDB39900F9225D /* FirstViewController.m in Sources */,
 				A4808BA515FDB39900F9225D /* SecondViewController.m in Sources */,
@@ -490,6 +534,10 @@
 				A406098715FDCD0D0046E0E6 /* CustomNoiseBackgroundView.m in Sources */,
 				A406098815FDCD0D0046E0E6 /* CustomSelectionView.m in Sources */,
 				A406098915FDCD0D0046E0E6 /* CustomTabItem.m in Sources */,
+				A451ECF915FF105700E206DB /* NewsViewController.m in Sources */,
+				A42C918C15FF20F000B6554F /* HTMLNode.m in Sources */,
+				A42C918D15FF20F000B6554F /* HTMLParser.m in Sources */,
+				A42C919115FF3ED000B6554F /* NewsDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +651,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cnblogs/Cnblogs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Cnblogs/Cnblogs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,6 +664,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cnblogs/Cnblogs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Cnblogs/Cnblogs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,6 +682,7 @@
 				A406092E15FDCAAA0046E0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4808B8015FDB39800F9225D /* Build configuration list for PBXProject "Cnblogs" */ = {
 			isa = XCConfigurationList;
