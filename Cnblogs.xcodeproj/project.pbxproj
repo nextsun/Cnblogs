@@ -75,6 +75,7 @@
 		A4808BA915FDB39900F9225D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4808BA815FDB39900F9225D /* second@2x.png */; };
 		A4808BAC15FDB39900F9225D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4808BAA15FDB39900F9225D /* FirstViewController.xib */; };
 		A4808BAF15FDB39900F9225D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4808BAD15FDB39900F9225D /* SecondViewController.xib */; };
+		A4E0B9F415FF7D30001E667F /* NewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E0B9F315FF7D30001E667F /* NewsItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,9 @@
 		A406099415FDCE3A0046E0E6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A406099515FDCE3A0046E0E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A406099815FDCF0E0046E0E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A410023416001E770090F2E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "/Users/sun/GitHub/Cnblogs/Cnblogs/zh-Hans.lproj/SecondViewController.xib"; sourceTree = "<absolute>"; };
+		A410023516001E770090F2E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "/Users/sun/GitHub/Cnblogs/Cnblogs/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
+		A410023616001E770090F2E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "/Users/sun/GitHub/Cnblogs/Cnblogs/zh-Hans.lproj/FirstViewController.xib"; sourceTree = "<absolute>"; };
 		A42C918715FF20F000B6554F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		A42C918815FF20F000B6554F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		A42C918915FF20F000B6554F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 		A4808BA815FDB39900F9225D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		A4808BAB15FDB39900F9225D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		A4808BAE15FDB39900F9225D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		A4E0B9F215FF7D30001E667F /* NewsItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItemCell.h; sourceTree = "<group>"; };
+		A4E0B9F315FF7D30001E667F /* NewsItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +283,8 @@
 				A451ECF815FF105700E206DB /* NewsViewController.m */,
 				A42C918F15FF3ED000B6554F /* NewsDetailController.h */,
 				A42C919015FF3ED000B6554F /* NewsDetailController.m */,
+				A4E0B9F215FF7D30001E667F /* NewsItemCell.h */,
+				A4E0B9F315FF7D30001E667F /* NewsItemCell.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -538,6 +546,7 @@
 				A42C918C15FF20F000B6554F /* HTMLNode.m in Sources */,
 				A42C918D15FF20F000B6554F /* HTMLParser.m in Sources */,
 				A42C919115FF3ED000B6554F /* NewsDetailController.m in Sources */,
+				A4E0B9F415FF7D30001E667F /* NewsItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +565,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A4808B9415FDB39900F9225D /* en */,
+				A410023516001E770090F2E4 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -564,6 +574,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A4808BAB15FDB39900F9225D /* en */,
+				A410023616001E770090F2E4 /* zh-Hans */,
 			);
 			name = FirstViewController.xib;
 			sourceTree = "<group>";
@@ -572,6 +583,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A4808BAE15FDB39900F9225D /* en */,
+				A410023416001E770090F2E4 /* zh-Hans */,
 			);
 			name = SecondViewController.xib;
 			sourceTree = "<group>";

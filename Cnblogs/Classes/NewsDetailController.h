@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JMTabView/JMTabView.h>
 
-@interface NewsDetailController : UIViewController{
+@interface NewsDetailController : UIViewController<JMTabViewDelegate>{
     NSString* newsUrl;
 }
 - (id)initWithUrlString:(NSString*)string;

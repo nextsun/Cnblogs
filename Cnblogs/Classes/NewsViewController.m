@@ -9,6 +9,8 @@
 #import "NewsViewController.h"
 #import "HTMLParser.h"
 #import "NewsDetailController.h"
+#import "NewsItemCell.h"
+#import "AppDelegate.h"
 
 #define urlNewsBase @"http://news.cnblogs.com"
 #define urlNewsBase2 @"http://news.cnblogs.com/mv?id="
@@ -36,37 +38,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.    
+	// Do any additional setup after loading the view. 
+    
     
 }
+
 -(void)loadView
 {
-    [super loadView];
+    [super loadView];    
     self.view.frame=self.view.bounds;
     [self addStandardTabView];
     
     
     
-    tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 50, 320,480-60-50) style:UITableViewStylePlain];
+    tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width,self.view.bounds.size.height-60) style:UITableViewStylePlain];
     tableView.dataSource=(id<UITableViewDataSource>)self;
     tableView.delegate=(id<UITableViewDelegate>)self;
     //tableView.contentInset=UIEdgeInsetsMake(0, 5, 0, 5); 
     //tableView.backgroundView=[[[UIView alloc] init] autorelease];
     //tableView.backgroundColor=[UIColor clearColor];
+    
+    
+    
+    
+    //[self reloadNews];
+    
     [self.view addSubview:tableView];
-    
-    
-    pageIndex=1;
-    
+    pageIndex=1;    
     newsUrlString=[NSString stringWithFormat:urlNewsLatest,pageIndex];
-    
     [self reloadNews];
     
     
-    
+}
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+   
+    tableView.frame=CGRectMake(0, 40, self.view.bounds.size.width,self.view.bounds.size.height-60);
     
 }
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [super viewDidAppear:animated]; 
+   
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     //NSLog(@"aaaaaaaa");
     return [dataArray count]+1;
@@ -82,10 +98,10 @@
     
     NewsDetailController* detail=[[NewsDetailController alloc] initWithUrlString:[urlNewsBase2 stringByAppendingString:newID]];  
     
-    detail.view.frame=self.view.bounds;
-    [self.view addSubview:detail.view];
-         
     
+    AppDelegate* app=(AppDelegate*)[UIApplication sharedApplication].delegate;
+    [app.navigationController pushViewController:detail animated:YES];
+    [detail release];
     
 }
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -100,10 +116,7 @@
     //[text setText:[dataArray objectAtIndex:indexPath.row]];
     
     
-    HTMLNode* node= [dataArray objectAtIndex:indexPath.row];
-
-    NSString* newName= [[[node findChildTag:@"a"] allContents] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-   // NSString* newID=[[node findChildTag:@"a"] getAttributeNamed:@"href"];
+    // NSString* newID=[[node findChildTag:@"a"] getAttributeNamed:@"href"];
     
     
     cell.selectionStyle=UITableViewCellSelectionStyleGray;
@@ -117,6 +130,12 @@
         [cell.contentView addSubview:btnLoadMore];
         
     }else {
+        
+        
+        HTMLNode* node= [dataArray objectAtIndex:indexPath.row];
+        
+        NSString* newName= [[[node findChildTag:@"a"] allContents] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
         
         UILabel* title=[[UILabel alloc] initWithFrame:CGRectMake(5, 0, tableView_.bounds.size.width-20, 20)];
         [title setText:newName];
@@ -153,7 +172,7 @@
 
 -(void)addStandardTabView;
 {
-    JMTabView * tabView = [[[JMTabView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50.)] autorelease];
+    JMTabView * tabView = [[[JMTabView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 40)] autorelease];
     
     [tabView setDelegate:self];    
     [tabView addTabItemWithTitle:@"时间" icon:[UIImage imageNamed:@"icon1.png"]];
@@ -162,25 +181,24 @@
     [tabView setSelectedIndex:0];
     
     [self.view addSubview:tabView];
-    //return tabView ;
 }
 -(void)tabView:(JMTabView *)tabView didSelectTabAtIndex:(NSUInteger)itemIndex
 {
-    pageIndex=0;
+    pageIndex=1;
     switch (itemIndex) {
         case 0:
         {    
-            newsUrlString=[NSString stringWithFormat:urlNewsLatest,1];
+            newsUrlString=[NSString stringWithFormat:urlNewsLatest,pageIndex];
             break;
         }
         case 1:
         {    
-            newsUrlString=[NSString stringWithFormat:urlNewsRecmmend,1];
+            newsUrlString=[NSString stringWithFormat:urlNewsRecmmend,pageIndex];
             break;
         } 
         case 2:
         {    
-            newsUrlString=[NSString stringWithFormat:urlNewsDigg,1];
+            newsUrlString=[NSString stringWithFormat:urlNewsDigg,pageIndex];
             break;
         } 
         default:
@@ -212,12 +230,13 @@
 -(void)loadMore:(UIButton*)btn
 {
     pageIndex++;
+    newsUrlString=[NSString stringWithFormat:urlNewsLatest,pageIndex];
     [self appendNews];
     
 }
 -(void)appendNews
 {
-    
+    NSLog(@"%@",newsUrlString);
     NSString* htmlString=[NSString stringWithContentsOfURL:[NSURL URLWithString:newsUrlString] encoding:NSUTF8StringEncoding error:nil] ;    
     HTMLParser* paraser=[[HTMLParser alloc] initWithString:htmlString error:nil];   
     

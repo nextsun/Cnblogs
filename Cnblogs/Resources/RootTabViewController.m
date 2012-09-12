@@ -87,7 +87,9 @@
     self.view = noiseBackgroundView;
     contentView=[[UIView alloc] init];         
     [self.view addSubview:contentView];
-    //[contentView addSubview:[self  createStandardTabView]];  
+    
+    topTabView=(JMTabView*)[self  createStandardTabView];
+    //[self.view addSubview:topTabView];  
     
    
     
@@ -102,17 +104,23 @@
 {
     
     [super viewDidLoad];
-    news=[[NewsViewController alloc] init];  
-    [contentView addSubview:news.view];
 }
+
 -(void)viewDidLayoutSubviews
 {
     
     [super viewDidLayoutSubviews];
-    //tabView.frame=CGRectMake(0, self.view.bounds.size.height - 60., self.view.bounds.size.width, 40.);
-    contentView.frame=CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-60);
+     NSLog(@"%@",NSStringFromCGRect(self.view.bounds));
+    contentView.frame=CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-40+10);
     
+    for (UIView* v in contentView.subviews) {
+        [v removeFromSuperview];
+    }     
+    news=[[NewsViewController alloc] init];
+    news.view.frame=contentView.bounds;
+    [contentView addSubview:news.view];
     
+   
 }
 -(void)tabView:(JMTabView *)tabView didSelectTabAtIndex:(NSUInteger)itemIndex;
 {
@@ -128,38 +136,38 @@
         switch (itemIndex) {
             case 0:
             {
-                news=[[NewsViewController alloc] init];  
+                news=[[NewsViewController alloc] init]; 
+                news.view.frame=contentView.bounds;
                 [contentView addSubview:news.view];
-                break;
-                //[contentView removeFromSuperview];
-                //[contentView addSubview:[self createStandardTabView]];
                 break;
             }  
             case 1:
             {
-                news=[[NewsViewController alloc] init];  
+                
+                news=[[NewsViewController alloc] init]; 
+                news.view.frame=contentView.bounds;
                 [contentView addSubview:news.view];
                 break;
             }
             case 2:
             {
-                NewsViewController* sec=[[NewsViewController alloc] init];  
-                [contentView addSubview:sec.view];
-                [sec release];
-                break;
-            }
+                
+                news=[[NewsViewController alloc] init]; 
+                news.view.frame=contentView.bounds;
+                [contentView addSubview:news.view];
+                break;            }
             case 3:
             {
-                NewsViewController* sec=[[NewsViewController alloc] init];  
-                [contentView addSubview:sec.view];
-                [sec release];
-                break;
-            }
+                
+                news=[[NewsViewController alloc] init]; 
+                news.view.frame=contentView.bounds;
+                [contentView addSubview:news.view];
+                break;            }
             case 4:
             {
-                NewsViewController* sec=[[NewsViewController alloc] init];  
+                NewsViewController* sec=[[[NewsViewController alloc] init]autorelease];  
                 [contentView addSubview:sec.view];
-                [sec release];
+                news.view.frame=contentView.bounds;
                 break;
             }
             default:

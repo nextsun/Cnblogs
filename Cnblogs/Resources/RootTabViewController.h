@@ -15,5 +15,6 @@
     
     UIView* contentView;
     NewsViewController* news;
+    JMTabView* topTabView;
 }
 @end
