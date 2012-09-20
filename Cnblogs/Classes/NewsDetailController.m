@@ -9,21 +9,10 @@
 #import "NewsDetailController.h"
 #import "CustomNoiseBackgroundView.h"
 
-@interface NewsDetailController ()
 
-@end
 
 @implementation NewsDetailController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-- (id)initWithUrlString:(NSString*)string
+-(id)initWithUrlString:(NSString*)string
 {
     
     self=[super init];
@@ -56,30 +45,26 @@
 {
     [super loadView];
     
-    
-    
-    
-}
--(void)viewWillAppear:(BOOL)animated
-{
     CustomNoiseBackgroundView * noiseBackgroundView = [[[CustomNoiseBackgroundView alloc] init] autorelease];
     noiseBackgroundView.frame=self.view.bounds;
     NSLog(@"%@",NSStringFromCGRect(self.view.bounds));
-    [self.view addSubview:noiseBackgroundView];
-    
+    [self.view addSubview:noiseBackgroundView];    
     [self addStandardTabView];
     
-    CGRect rect=CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height-40);
-    UIWebView* web=[[UIWebView alloc] initWithFrame:rect];
-    [self.view addSubview:web];
-    web.backgroundColor=[UIColor clearColor];
-    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:newsUrl]]];
+    webView=[[UIWebView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:webView];
+    webView.backgroundColor=[UIColor clearColor];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:newsUrl]]];
+    
+    
+    
     
 }
 -(void)viewDidLayoutSubviews
-{
-    
+{    
     [super viewDidLayoutSubviews];
+    CGRect rect=CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height-40);
+    webView.frame=rect;
 }
 - (void)viewDidUnload
 {

@@ -13,6 +13,7 @@
 #import "SecondViewController.h"
 
 #import "RootTabViewController.h"
+//#import "Logging.h"
 
 @implementation AppDelegate
 
@@ -38,11 +39,14 @@
 //    self.window.rootViewController = self.tabBarController;
 //    [self.window makeKeyAndVisible];
 //    
+    
+    LogInfo(@"aaaa");
+    
     RootTabViewController * rootViewController = [[[RootTabViewController alloc] initWithNibName:nil bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
     [self.navigationController setNavigationBarHidden:YES];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     self.window.rootViewController=self.navigationController;
     //[self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];

@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <JMTabView/JMTabView.h>
-#import "NewsViewController.h"
+#import "NewsListController.h"
+#import "BlogListViewController.h"
 
 @interface RootTabViewController : UIViewController <JMTabViewDelegate>
 {
     
     UIView* contentView;
-    NewsViewController* news;
+    NewsListController* news;
+    BlogListViewController* blogs;
+    UIViewController* currentControlle;
     JMTabView* topTabView;
 }
 @end

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <JMTabView/JMTabView.h>
 
-@interface NewsDetailController : UIViewController<JMTabViewDelegate>{
+@interface NewsDetailController : UIViewController{
     NSString* newsUrl;
+    UIWebView* webView;
 }
 - (id)initWithUrlString:(NSString*)string;
 @end
