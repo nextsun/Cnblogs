@@ -17,7 +17,7 @@
 		A406094C15FDCAE40046E0E6 /* JMTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094015FDCAE40046E0E6 /* JMTabItem.m */; };
 		A406094D15FDCAE40046E0E6 /* JMTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094215FDCAE40046E0E6 /* JMTabView.m */; };
 		A406094E15FDCAE40046E0E6 /* BarBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A406094515FDCAE40046E0E6 /* BarBackgroundLayer.m */; };
-		A406094F15FDCB420046E0E6 /* JMTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = A406094115FDCAE40046E0E6 /* JMTabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A406094F15FDCB420046E0E6 /* JMTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = A406094115FDCAE40046E0E6 /* JMTabView.h */; settings = {ATTRIBUTES = (); }; };
 		A406095015FDCB5E0046E0E6 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093215FDCAE40046E0E6 /* UIColor+Hex.m */; };
 		A406095115FDCB5E0046E0E6 /* UIView+InnerShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093415FDCAE40046E0E6 /* UIView+InnerShadow.m */; };
 		A406095215FDCB5E0046E0E6 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A406093615FDCAE40046E0E6 /* UIView+Positioning.m */; };
@@ -78,7 +78,6 @@
 		A42C918E15FF20F000B6554F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A42C918B15FF20F000B6554F /* README.md */; };
 		A42C919115FF3ED000B6554F /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42C919015FF3ED000B6554F /* NewsDetailController.m */; };
 		A451ECF915FF105700E206DB /* NewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A451ECF815FF105700E206DB /* NewsListController.m */; };
-		A451ECFD15FF1C8E00E206DB /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */; };
 		A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8A15FDB39900F9225D /* UIKit.framework */; };
 		A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8C15FDB39900F9225D /* Foundation.framework */; };
 		A4808B8F15FDB39900F9225D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4808B8E15FDB39900F9225D /* CoreGraphics.framework */; };
@@ -92,6 +91,8 @@
 		A4808BA915FDB39900F9225D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4808BA815FDB39900F9225D /* second@2x.png */; };
 		A4808BAC15FDB39900F9225D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4808BAA15FDB39900F9225D /* FirstViewController.xib */; };
 		A4808BAF15FDB39900F9225D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4808BAD15FDB39900F9225D /* SecondViewController.xib */; };
+		A4C2DAEC17944DEB0004809A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C2DAEB17944DEB0004809A /* Default-568h@2x.png */; };
+		A4C2DAED17944F730004809A /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2DAE917944DC20004809A /* libxml2.2.dylib */; };
 		A4E0B9F415FF7D30001E667F /* NewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E0B9F315FF7D30001E667F /* NewsItemCell.m */; };
 /* End PBXBuildFile section */
 
@@ -194,7 +195,6 @@
 		A42C919015FF3ED000B6554F /* NewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
 		A451ECF715FF105700E206DB /* NewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListController.h; sourceTree = "<group>"; };
 		A451ECF815FF105700E206DB /* NewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListController.m; sourceTree = "<group>"; };
-		A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 		A4808B8615FDB39900F9225D /* Cnblogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cnblogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4808B8A15FDB39900F9225D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4808B8C15FDB39900F9225D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +213,8 @@
 		A4808BA815FDB39900F9225D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		A4808BAB15FDB39900F9225D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		A4808BAE15FDB39900F9225D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		A4C2DAE917944DC20004809A /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		A4C2DAEB17944DEB0004809A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A4D7C18616017C98002EC699 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
 		A4E0B9F215FF7D30001E667F /* NewsItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItemCell.h; sourceTree = "<group>"; };
 		A4E0B9F315FF7D30001E667F /* NewsItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItemCell.m; sourceTree = "<group>"; };
@@ -234,11 +236,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C2DAED17944F730004809A /* libxml2.2.dylib in Frameworks */,
 				A4100271160037310090F2E4 /* MobileCoreServices.framework in Frameworks */,
 				A410026F160036BB0090F2E4 /* libz.1.2.5.dylib in Frameworks */,
 				A410026D160036A20090F2E4 /* CFNetwork.framework in Frameworks */,
 				A410026B160036970090F2E4 /* SystemConfiguration.framework in Frameworks */,
-				A451ECFD15FF1C8E00E206DB /* libxml2.2.7.3.dylib in Frameworks */,
 				A40609A315FDD17B0046E0E6 /* QuartzCore.framework in Frameworks */,
 				A4808B8B15FDB39900F9225D /* UIKit.framework in Frameworks */,
 				A4808B8D15FDB39900F9225D /* Foundation.framework in Frameworks */,
@@ -462,6 +464,7 @@
 		A4808B7B15FDB39800F9225D = {
 			isa = PBXGroup;
 			children = (
+				A4C2DAEB17944DEB0004809A /* Default-568h@2x.png */,
 				A4808B9015FDB39900F9225D /* Cnblogs */,
 				A406092615FDCAAA0046E0E6 /* JMTabView */,
 				A4808B8915FDB39900F9225D /* Frameworks */,
@@ -481,7 +484,7 @@
 		A4808B8915FDB39900F9225D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A451ECFC15FF1C8E00E206DB /* libxml2.2.7.3.dylib */,
+				A4C2DAE917944DC20004809A /* libxml2.2.dylib */,
 				A410026E160036BB0090F2E4 /* libz.1.2.5.dylib */,
 				A4100270160037310090F2E4 /* MobileCoreServices.framework */,
 				A410026C160036A20090F2E4 /* CFNetwork.framework */,
@@ -643,6 +646,7 @@
 				A406097615FDCC8A0046E0E6 /* noise-tile.png in Resources */,
 				A406097715FDCC8A0046E0E6 /* noise-tile@2x.png in Resources */,
 				A42C918E15FF20F000B6554F /* README.md in Resources */,
+				A4C2DAEC17944DEB0004809A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,7 +827,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cnblogs/Cnblogs-Prefix.pch";
-				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"${SDK_DIR}/usr/include/libxml2/**",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Cnblogs/Cnblogs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -837,7 +844,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cnblogs/Cnblogs-Prefix.pch";
-				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"${SDK_DIR}/usr/include/libxml2/**",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Cnblogs/Cnblogs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
